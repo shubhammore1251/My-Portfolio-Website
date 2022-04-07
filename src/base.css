@@ -1,0 +1,56 @@
+:root{
+    --primary-color: #fff;
+
+    --secondary-color: rgb(13,139,240);
+
+    --secondary-color2: rgb(0,86,210);
+
+    --tertiary-color:#bbd0f0;
+
+    --light-grey: #e3e7ee;
+
+    --grey-color: #6a7381;
+
+    --border-color: rgba(17, 12, 46, 0.15);
+
+    --border-color2: rgba(17, 12, 46, 0.15);
+
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+
+    --box-shadow-secondary: rgba(187, 208, 240, 0.75);
+
+    --box-shadow-tertiary: #888888;
+
+    --black-color: rgb(0, 0, 0);
+
+   --scrollbar-color: rgb(13,139,240);
+
+}
+
+
+
+[data-theme="dark"]{
+    --primary-color: rgb(39, 39, 39);
+
+    --secondary-color: #36eb7e;
+
+    --secondary-color2: #2ac267;
+
+    --tertiary-color:#838383;
+
+    --light-grey: rgba(72, 72, 72, 0.217);
+
+    --grey-color: #6a7381;
+
+    --border-color: rgba(195, 195, 195, 0.15);
+
+    --border-color2: rgba(1, 1, 1, 0.75);
+
+    --box-shadow-color: rgba(3, 3, 3, 0.718);
+
+    --box-shadow-secondary: rgba(1, 1, 1, 0.75);
+
+    --box-shadow-tertiary: rgba(1, 1, 1, 0.75);
+
+    --black-color: #fff;
+}
