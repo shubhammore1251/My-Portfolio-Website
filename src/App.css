@@ -784,11 +784,6 @@ html::-webkit-scrollbar-track {
 /*320px to 480px*/
 @media (min-width: 320px) and (max-width:480px) {
     
-    .app{
-
-        padding: 2vw;
-        
-    }
 
     .navbar .navbar-brand {
         font-size: 1.2rem;

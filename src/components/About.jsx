@@ -5,7 +5,7 @@ import {motion} from 'framer-motion';
 const About = ({currTheme}) => {
       return (
         <>
-          <div className="about-section" >
+          <div className="about-section" id="about">
 
             <motion.div
               whileInView={{x:[-100,0], opacity: [0,1]}}
@@ -29,7 +29,7 @@ const About = ({currTheme}) => {
               transition={{duration: 0.5}}
               className="about-data about-right"
             >
-              <h3 id="about">About Me</h3>
+              <h3>About Me</h3>
 
               <p> 
                 Hi, I am <b>shubham more</b> , a <b>front-end developer</b> and currently, I am pursuing&nbsp;
