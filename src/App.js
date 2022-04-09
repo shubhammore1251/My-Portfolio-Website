@@ -37,17 +37,14 @@ function App() {
    
 
   return (
-    <>
-      <div className="app" data-theme={theme}>
-        <Navbar changeTheme={changeTheme} currTheme={theme}/>
-        <Header currTheme={theme}/>
-        <About currTheme={theme}/>
-        <Skills/>
-        <Project/>
-        <Contact/>
-      </div>
-     
-    </>
+    <div className="app" data-theme={theme}>
+      <Navbar changeTheme={changeTheme} currTheme={theme}/>
+      <Header currTheme={theme}/>
+      <About currTheme={theme}/>
+      <Skills/>
+      <Project/>
+      <Contact/>
+    </div>
   )
 }
 

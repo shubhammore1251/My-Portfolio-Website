@@ -1,11 +1,10 @@
 import React from 'react'
 
-
 const Navbar = ({changeTheme,currTheme}) => {
     
     const media = window.matchMedia("(min-width: 320px)and (max-width: 480px)");
 
-    const allowToggle = media.matches?"collapse":" "
+    const allowToggle = media.matches? "collapse" : ""
 
 
     return (
@@ -38,34 +37,63 @@ const Navbar = ({changeTheme,currTheme}) => {
 
                         <li className="nav-item d-flex">
                             <i className="fi fi-sr-home mt-2"></i>
-                            <a className="nav-link" aria-current="page" href="/" data-bs-toggle={allowToggle}data-bs-target="#navbarNav">Home</a>
+
+                            <a className="nav-link" href="/" >
+                                
+                              <span data-bs-toggle={allowToggle} data-bs-target="#navbarNav">
+                                Home
+                              </span>
+                            
+                            </a>
                         </li>
 
                         <li className="nav-item d-flex">
                             <i className="fi fi-sr-info  mt-2"></i>
-                            <a className="nav-link" href="#about"data-bs-toggle={allowToggle} data-bs-target="#navbarNav">About</a>
+
+                            <a className="nav-link" href="#about">
+
+                                <span data-bs-toggle={allowToggle} data-bs-target="#navbarNav">
+                                   About
+                                </span>
+
+                            </a>
                         </li>
 
                         <li className="nav-item d-flex">
                             <i className="fi fi-sr-head-side-thinking mt-2"></i>
-                            <a className="nav-link" href="#tech"data-bs-toggle={allowToggle} data-bs-target="#navbarNav">Tech</a>
+
+                            <a className="nav-link" href="#tech">
+                               
+                                <span data-bs-toggle={allowToggle} data-bs-target="#navbarNav">
+                                    Tech
+                                </span>
+
+                            </a>
                         </li>
 
                         <li className="nav-item d-flex">
                             <i className="fi fi-sr-edit-alt mt-2"></i>
-                            <a className="nav-link" href="#projects" data-bs-toggle={allowToggle}data-bs-target="#navbarNav">Projects</a>
+
+                            <a className="nav-link" href="#projects">
+                             
+                                <span data-bs-toggle={allowToggle} data-bs-target="#navbarNav">
+                                Projects     
+                                </span>
+
+                            </a>
                         </li>
 
                         <li className="nav-item d-flex">
                             <i className="fi fi-sr-address-book mt-2"></i>
-                            <a className="nav-link" href="#contact" data-bs-toggle={allowToggle}data-bs-target="#navbarNav">Contact</a>
-                        </li>
 
-                            {/* <li className="nav-item">
-                                <div className="form-check form-switch mt-2">
-                                    <input className="form-check-input" type="checkbox" role="switch" id="toggleswitch" />
-                                </div>
-                            </li> */}
+                            <a className="nav-link" href="#contact">
+                              
+                            <span data-bs-toggle={allowToggle} data-bs-target="#navbarNav">
+                                Contact   
+                            </span>
+
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

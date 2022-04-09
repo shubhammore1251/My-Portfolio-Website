@@ -48,7 +48,7 @@ html::-webkit-scrollbar-track {
     padding: 2px;
     background-color: var(--primary-color) !important;
     box-shadow: var(--border-color) 0px 48px 100px 0px;
-    margin-top: -1.5vh;
+    margin-top: -1.3vh;
 }
 
 .navbar .navbar-brand {
@@ -82,6 +82,10 @@ html::-webkit-scrollbar-track {
     padding: 6px;
     font-weight: 500;
     color: var(--black-color);
+}
+
+.navbar-brand img:hover{
+   cursor: pointer;
 }
 
 .navbar-nav li:after {
@@ -779,9 +783,15 @@ html::-webkit-scrollbar-track {
 
 /*320px to 480px*/
 @media (min-width: 320px) and (max-width:480px) {
+    
+    .app{
+
+        padding: 2vw;
+        
+    }
 
     .navbar .navbar-brand {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         letter-spacing: 6px
     }
 
