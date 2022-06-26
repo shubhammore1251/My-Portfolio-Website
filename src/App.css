@@ -20,7 +20,6 @@ body {
     overflow-x:hidden;
 }
 
-
 .app{
 
     background-color: var(--primary-color);
@@ -784,7 +783,6 @@ html::-webkit-scrollbar-track {
 /*320px to 480px*/
 @media (min-width: 320px) and (max-width:480px) {
     
-
     .navbar .navbar-brand {
         font-size: 1.2rem;
         letter-spacing: 6px
