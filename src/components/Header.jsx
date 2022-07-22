@@ -72,7 +72,7 @@ const Header = ({currTheme}) => {
             >
                 
                 <div className='circle-cmp'>
-                    <a href="https://www.linkedin.com/in/shubham-more-27b41b1b8/" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/shubham-more1251/" target="_blank" rel="noreferrer">
                      <img src="images/linkedin.png" alt="linkedin"/>
                     </a>
                    
