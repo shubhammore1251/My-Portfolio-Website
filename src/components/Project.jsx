@@ -32,19 +32,25 @@ const Project = () => {
                             </div>
 
                             <div className="right-block">
-                                <h3>{ele.name}</h3>
 
-                                <p>{ele.desc}</p>
-
-                                <div className='tech-icons'>
-                                    {ele.tech.map((item)=>(
-                                            
-                                        <img src={item.img} alt={item.id} key={item.id}/>
-                                    ))}
-                                        
+                                <div className="right-text">
+                                    <h3>{ele.name}</h3>
+                                    <p>{ele.desc}</p>
                                 </div>
-                                        
-                                <a href={ele.demo_link} target="_blank" rel="noreferrer" className='d-flex button-33 flex-column'>Demo</a>
+                                
+                                
+                                <div className="iconandbutton">
+                                    <div className='tech-icons'>
+                                        {ele.tech.map((item)=>(
+                                                
+                                            <img src={item.img} alt={item.id} key={item.id}/>
+                                        ))}
+                                            
+                                    </div>
+                                            
+                                    <a href={ele.demo_link} target="_blank" rel="noreferrer" className='d-flex button-33 flex-column'>Demo</a>
+                                </div>
+                               
                                         
                             </div>
                         </div>

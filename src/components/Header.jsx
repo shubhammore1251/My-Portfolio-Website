@@ -46,21 +46,21 @@ const Header = ({currTheme}) => {
                 </div>
             </motion.div>
 
-
+            
             <motion.div
              whileInView={{opacity: [0,1]}}
              transition={{duration: 0.5, delayChildren:0.5}}
              className="header-img"
             >
             
-            <img src='images/shubham-more.png' alt="profilebg" width="700px" height="600px"/>
-            <motion.img
-                whileInView={{scale: [0,1]}}
-                transition={{duration: 1, ease:'easeInOut'}}
-                src="images/circle.png"
-                alt="profileimg"
-                className='circle-overlay'
-            />
+                <img src='images/shubham-more.png' alt="profilebg" width="700px" height="600px"/>
+                <motion.img
+                    whileInView={{scale: [0,1]}}
+                    transition={{duration: 1, ease:'easeInOut'}}
+                    src="images/circle.png"
+                    alt="profileimg"
+                    className='circle-overlay'
+                />
 
             </motion.div>
 

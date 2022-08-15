@@ -34,8 +34,7 @@ const About = ({currTheme}) => {
               <p> 
                 Hi, I am <b>shubham more</b> , a <b>front-end developer</b> and currently, I am pursuing&nbsp;
                 <span style={{textTransform:"uppercase"}}>B.E.-IT</span>. 
-                I started my front-end development journey in April 2021. 
-                </p>
+              </p>
 
               <p>My point of interest in this was I loved how much effort a web developer puts in the code stuff and gives a beautiful and amazing front end, we just see the webpage we get to watch on the front side but the effort behind is so high.</p>
 

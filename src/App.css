@@ -47,7 +47,8 @@ html::-webkit-scrollbar-track {
     padding: 2px;
     background-color: var(--primary-color) !important;
     box-shadow: var(--border-color) 0px 48px 100px 0px;
-    margin-top: -1.3vh;
+    /* margin-top: -1.3vh; */
+    height: 8vh;
 }
 
 .navbar .navbar-brand {
@@ -121,8 +122,7 @@ html::-webkit-scrollbar-track {
 
 /*Header*/
 #header {
-    position: relative;
-    
+    position: relative; 
 }
 
 .header-flex {
@@ -131,13 +131,14 @@ html::-webkit-scrollbar-track {
     align-items: center;
 }
 
+
 .header {
     flex: 1;
     width: 100%;
     height: 100%;
     flex-direction: row;
     margin: 0 50px;
-    margin-top: 50px;
+    margin-top: -1vh !important;
     padding: 1rem 2rem 0;
 
 }
@@ -292,8 +293,8 @@ html::-webkit-scrollbar-track {
 .about-section {
     display: flex;
     flex-direction: row;
-    padding: 2rem;
-    margin: 5vh 0;
+    padding: 5rem;
+    margin-top: 10vh;
 }
 
 .about-data {
@@ -304,7 +305,7 @@ html::-webkit-scrollbar-track {
     margin-top: -10px;
     width: 480px;
     height: 480px;
-    margin-left: 120px;
+    margin-left: 5vw;
 
     animation-name: imagemove;
     animation-duration: 5s;
@@ -356,51 +357,59 @@ html::-webkit-scrollbar-track {
 
 
 /*Skills Section*/
+.skills-section{
+    margin-top: 15vh;
+    padding: 5rem;
+}
+
 .skills-section h1 {
     text-align: center;
-    margin: 8vh 0;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3rem;
     font-weight: bold;
     color: var(--black-color);
 }
 
+
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    margin-left: 10vw;
+    margin-left: 8vw;
+    margin-top: 5vh;
 }
 
 
 .skills-div {
 
     box-shadow: 9px 2px 7px -1px var(--box-shadow-secondary);
-    
-    border-radius: 8px;
-    width: 180px;
-    height: 190px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
     border: 1px solid var(--box-shadow-secondary);
     margin-bottom: 3vh;
-}
-
-.skills-div .skills-map {
-    margin: 2vw 3vw;
-    padding: 1px;
     cursor: pointer;
-}
-
-.skills-div h3{
-    color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .skills-div img {
-    width: 80px;
-    height: 80px;
+    width: 60%;
+    height: 60%;
     user-select: none;
+}
 
+.fireb-class{
+    width: 50% !important; 
+    height: 50% !important;
+}
+
+.Sass-class{
+    width: 65% !important; 
+    height: 65% !important;
 }
 
 .skills-div img:hover {
@@ -432,25 +441,13 @@ html::-webkit-scrollbar-track {
 }
 
 
-.skills-div .js-class {
-    font-size: 18px;
-    margin-left: -2vw;
-}
-
-.skills-div .react-class {
-    font-size: 20px;
-    margin-left: -0.5vw;
-}
-
-
-.skills-div .bs-class {
-    font-size: 18px;
-    margin-left: -1.8vw;
-}
-
-
 
 /*Projects Div*/
+.projects{
+    margin-top: 15vh;
+    padding: 2rem;
+}
+
 .projects h2 {
     text-align: center;
     margin: 80px 0;
@@ -516,6 +513,7 @@ html::-webkit-scrollbar-track {
 
 .tech-icons {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tech-icons img {
@@ -783,6 +781,14 @@ html::-webkit-scrollbar-track {
 /*320px to 480px*/
 @media (min-width: 320px) and (max-width:480px) {
     
+    .navbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
     .navbar .navbar-brand {
         font-size: 1.2rem;
         letter-spacing: 6px
@@ -793,14 +799,23 @@ html::-webkit-scrollbar-track {
         height: 20px;
     }
 
-    #navbarNav {
-        margin: 50px 110px;
-        height: 100vh !important;
-        transition: 0.5s ease-in-out;
+    #navbarNav { 
+        margin: 0px 111px;
+        margin-top: 7vh;
+        background-color: var( --primary-color) !important;
+        z-index: 999;
+        margin-left: 0vw;
+        padding: 200px;
+        height: 100vh; 
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
     }
 
     #navbarNav ul li {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     #navbarNav ul li a {
@@ -809,7 +824,12 @@ html::-webkit-scrollbar-track {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-transform: capitalize;
         color: var(--black-color);
+       
+    } 
 
+    .navbar-nav{
+        margin-top: -20vh;
+        margin-left: -9vh;
     }
 
     .navbar-nav li:after {
@@ -820,8 +840,9 @@ html::-webkit-scrollbar-track {
         display: none;
         transition: 0;
         bottom: 0;
-    }
-
+    } 
+    
+   
     .navbar-nav li:hover::after {
         width: 0;
         height: 0px;
@@ -840,11 +861,10 @@ html::-webkit-scrollbar-track {
     .header {
         flex-direction: column;
         padding: 4rem 1.5rem 6rem;
-        margin-top: -15vh;
     }
 
     .header-info {
-        margin-top: 120px;
+        margin-top: 5vh;
         width: 100px;
     }
 
@@ -876,7 +896,7 @@ html::-webkit-scrollbar-track {
 
     .header-img {
         margin-right: 80px;
-        margin-top: -15vh;
+        margin-top: -12vh;
     }
 
     .header-img .circle-overlay {
@@ -885,12 +905,11 @@ html::-webkit-scrollbar-track {
 
     .header-circles {
         flex-direction: row;
-        margin-top: -15vh;
+        margin-top: -12vh;
         margin-left: -80px;
     }
 
     .header-circles .circle-cmp {
-        /* margin-top: 100px;  */
         height: 20vw;
         width: 20vw;
     }
@@ -900,13 +919,13 @@ html::-webkit-scrollbar-track {
     .about-section {
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        padding: 0rem;
-        margin-top: -9vh;
+        margin-top: 1vh;
+        padding: 5rem;
     }
 
     .about-data {
-        padding: 3vw;
-        margin-left: 3vw;
+        padding: 2vw;
+        margin-left: -18vw;
     }
 
     .about-right h3 {
@@ -936,64 +955,46 @@ html::-webkit-scrollbar-track {
 
 
     /*Skills Section*/
+    
+    .skills-section{
+       margin-top: 16vh;
+       padding: 5rem;
+       margin-left: -18vw;
+    }
+    
+    .skills-section h1 {
+        margin-left: 12vw;
+        font-size: 45px;
+    }
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 8vw;
+        margin-top: 5vh
     }
 
 
     .skills-div {
-
-
-        border-radius: 8px;
-        width: 120px;
-        height: 120px;
-        /* margin-bottom: 3vh; */
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
     }
 
-    .skills-div div {
-        margin: 2vw 3vw;
-        padding: 5px;
-    }
 
     .skills-div img {
         width: 60%;
         height: 60%;
-        margin-left: 4vw;
-        margin-top: 1vw;
+        padding: 3px;
     }
 
-
-
-    .skills-div h3 {
-        text-transform: uppercase;
-        font-size: 20px;
-        letter-spacing: 2px;
-        margin-top: 2vh;
-        margin-left: 4vw;
-        user-select: none;
-
-    }
-
-
-    .skills-div .js-class {
-        font-size: 15px;
-    }
-
-    .skills-div .react-class {
-        font-size: 18px;
-
-    }
-
-
-    .skills-div .bs-class {
-        font-size: 15px;
-        margin-left: -1.8vw;
-    }
 
 
     /*Projects Section*/
+    
+    .projects{
+        margin-top: -2vh;
+        padding: 1rem; 
+    }
 
 
     .project-block {
@@ -1028,7 +1029,7 @@ html::-webkit-scrollbar-track {
     }
 
     .right-block h3 {
-        margin: 3vh 12vw;
+        margin: 3vh 20vw;
         font-size: 1.5rem;
         font-weight: bold;
         font-family: 'Josefin Sans', sans-serif;
@@ -1077,19 +1078,39 @@ html::-webkit-scrollbar-track {
 
 /*481 to 1024px*/
 @media (min-width: 481px) and (max-width:1180px) {
+    
+    .navbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
 
+    
     .navbar .navbar-brand {
         font-size: 3rem;
         letter-spacing: 5px
     }
 
     #navbarNav {
-        margin: 50px 300px;
+        margin: 0px 111px;
+        margin-top: 7vh;
+        background-color: var( --primary-color) !important;
+        z-index: 999;
+        margin-left: 0vw;
+        padding: 200px;
+        height: 100vh; 
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
 
     }
 
     #navbarNav ul li {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     #navbarNav ul li a {
@@ -1099,6 +1120,11 @@ html::-webkit-scrollbar-track {
         text-transform: capitalize;
         color: var(--black-color);
 
+    }
+
+    .navbar-nav{
+        margin-top: -5vh;
+        margin-left: 10vw;
     }
 
     .navbar-nav li:after {
@@ -1128,13 +1154,24 @@ html::-webkit-scrollbar-track {
 
     /*Header*/
     .header {
-        padding: 2rem;
+        margin-top: 15vh !important;
+        flex-direction: column;
     }
 
     .header-info {
-        margin-top: -200px;
-        margin-left: -40px;
+        margin-top: -20px;
+        margin-left: -120vw;
+        width: 800px;
     }
+
+    
+
+    .tag-cmp {
+        width: 300px;
+        margin-top: 3rem;
+        margin-right: -5vw;
+    }
+
 
     .p-text {
         font-size: 1rem;
@@ -1157,8 +1194,8 @@ html::-webkit-scrollbar-track {
     }
 
     .header-img {
-        margin-left: 50px;
-        margin-top: -50px;
+        margin-left: -10vw;
+        margin-top: 5vh
     }
 
     .header-img img {
@@ -1172,34 +1209,39 @@ html::-webkit-scrollbar-track {
     }
 
     .header-circles {
-        margin-left: 0px;
-        margin-top: -180px;
+        flex-direction: row;
+        margin-left: -50px;
+        margin-top: -10vh;
+        
     }
 
     .header-circles .circle-cmp {
-        height: 80px;
-        width: 80px;
+        height: 120px;
+        width: 120px;
+        margin-right: 5vw;
     }
 
     .header-circles .circle-cmp img {
-        margin-top: 5px;
-        margin-left: 5px;
+        margin-top: 1vh;
+        margin-left: 1vw;
     }
 
     /*About Section*/
     .about-section {
-        margin-top: -10px;
+        margin-top: 5vh;
         flex-direction: column-reverse;
+        padding: 12rem;
     }
 
     .about-data {
-        margin-left: 15vw;
-        margin-top: -300px;
+        margin-left: -10vw;
+        margin-top: -5vh;
     }
 
     .about-right h3 {
         font-size: 3rem;
         margin-left: 5vw;
+        margin-bottom: 5vh;
     }
 
     .about-right p {
@@ -1210,7 +1252,7 @@ html::-webkit-scrollbar-track {
     }
 
     .about-left img {
-        margin-top: 28vh;
+        margin-top: 10vh;
         margin-left: 5vw;
         width: 50vw;
         height: 50vw;
@@ -1226,30 +1268,28 @@ html::-webkit-scrollbar-track {
     /*Skills Section*/
 
     .skills-section {
-        margin-top: -3vh;
+        margin-top: -10vh;
+        padding: 10rem !important;
     }
 
     .skills-grid {
-
-        gap: 15px;
+        gap: 5vw;
     }
 
 
     .skills-div {
         margin-top: -2vh;
-        border-radius: 8px;
-        width: 160px;
-        height: 160px;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
         margin-bottom: 3vh;
-        margin-left: -5vw;
+        margin-left: -20vw;
+        margin-right: 18vw
     }
 
-    .skills-div div {
-        margin: 2vw 2vw;
-    }
 
     .skills-div img {
-        margin-left: 3vw;
+        padding: 3px;
     }
 
 
@@ -1265,47 +1305,28 @@ html::-webkit-scrollbar-track {
     }
 
 
-    .skills-div .js-class {
-        font-size: 18px;
-        margin-left: 1vw;
+    /*Project section*/
+    .projects{
+        margin-top: -5vh;
+        
     }
-
-    .skills-div .react-class {
-        font-size: 18px;
-        margin-left: 2vw;
-
-    }
-
-
-    .skills-div .bs-class {
-        font-size: 18px;
-        margin-left: 1vw;
-    }
-
-    .skills-div .git-class {
-        font-size: 20px;
-        margin-left: 6vw;
-    }
-
-    /*Projects Section*/
-
-
+    
     .project-block {
         width: 90vw;
-        height: 40vh;
+        height: fit-content;
         margin: 0 auto;
         margin-top: -10px;
         margin-bottom: 100px;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
     }
 
 
 
     .left-block {
         height: 40vh;
-        width: 60vw;
+        width: 100%;
         padding: 55px;
-        margin-left: -5vw;
     }
 
     .left-block img {
@@ -1314,31 +1335,41 @@ html::-webkit-scrollbar-track {
     }
 
     .right-block {
-        margin-left: -4vw;
-        margin-top: 2vh;
+        margin-left: 5vw;
+        margin-top: -6vh;
         width: 800px;
         padding: 3px 0;
+        display: flex;
     }
 
     .right-block h3 {
-        margin: 3vh 6vw;
+        margin: 2vh 6vw;
         font-size: 1.8rem;
     }
 
     .right-block p {
         font-size: 20px;
         width: 35vw;
-        margin-top: -2vh;
-        text-align: start;
+        margin-top: 2vh;
+        text-align: justify;
+    }
+    
+    .iconandbutton{
+        margin-left: 8vw;
+        margin-top: 2vh;
     }
 
+    .tech-icons{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
 
     .tech-icons img {
-        width: 38px;
-        height: 38px;
+        width: 40px;
+        height: 40px;
         margin-right: 2vw;
         margin-top: 1vh;
-        margin-bottom: 3vh;
+        margin-bottom: 5vh;
     }
 
 
@@ -1409,6 +1440,113 @@ html::-webkit-scrollbar-track {
     .map{
         min-height: 300px;
         padding: 0;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 1920px) {
+
+    #navbarNav {
+        margin: 0 500px;
+    }
+    
+    #navbarNav ul li {
+        margin-right: 5vw;
+    }
+    
+    #navbarNav ul li a { 
+        padding: 8px;
+    }
+
+    .about-section {
+        margin: 6vh 0;
+    }
+    
+    .about-data {
+        margin-right: 15vw;
+    }
+    
+    .about-left img {
+        margin-top: -5px;
+        margin-left: 250px;
+    }
+    
+    
+    
+    /*Skills Section*/
+    
+    .skills-div img {
+        width: 60%;
+        height: 60%;
+        user-select: none;
+    }
+    
+    
+    /*Projects Div*/
+    
+
+    .project-block {
+        width: fit-content; 
+    }
+    
+    
+
+    .left-block {
+        width: 600px;
+        padding: 50px;
+    }
+    
+    .left-block img {
+        width: 600px;    
+    }
+    
+    .right-block {
+        margin-left: 3vw;
+        margin-top: 3vh;
+        width: 650px;
+    }
+    
+    .right-block h3 {
+        margin: 3vh 8vw;
+    }
+    
+    .right-block p {
+        width: 30vw;
+    }
+    
+    .tech-icons {
+        display: flex;
+    }
+    
+    .tech-icons img {
+        width: 30px;
+        height: 30px;
+        margin-right: 1vw;
+        margin-top: 1vh;
+        margin-bottom: 5vh;
+    }
+    
+    
+    .button-33 {
+        background-color: var(--secondary-color2);
+        border-radius: 22px;
+        color: var(--primary-color);
+        padding: 6px 18px;
+        width: 90px;
+        height: 40px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+    }
+    
+    .button-33:hover {
+        background: var(--secondary-color);
+        color: var(--primary-color);
     }
 
 }

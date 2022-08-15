@@ -2,13 +2,13 @@ import React from 'react'
 
 const Navbar = ({changeTheme,currTheme}) => {
     
-    const media = window.matchMedia("(min-width: 320px)and (max-width: 480px)");
+    const media = window.matchMedia("(max-width: 1180px)");
 
     const allowToggle = media.matches? "collapse" : ""
 
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <span className="navbar-brand">
                     PORTFOLIO
