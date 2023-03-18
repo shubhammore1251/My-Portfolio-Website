@@ -10,7 +10,7 @@ const Contact = () => {
   const sendEmail = (e)=>{
        
     e.preventDefault();
-    emailjs.sendForm('service_ocri3pp', 'template_52e8usl', form.current, "d-GUXgDaMfvcVzE9E")
+    emailjs.sendForm('service_ocri3pp', 'template_52e8usl', form.current, "K6Jll_z0wKXaEZiQg")
     .then((result) => {
         console.log(result.text);
     },(error) => {
@@ -45,12 +45,12 @@ const Contact = () => {
                       <div className="row50">
                         <div className="inputBox">
                           <span>First Name</span>
-                          <input type="text" placeholder='John' name="fname"/>
+                          <input type="text" placeholder='John' name="fname" required/>
                         </div>
 
                         <div className="inputBox">
                           <span>Last Name</span>
-                          <input type="text" placeholder='Doe' name="lname"/>
+                          <input type="text" placeholder='Doe' name="lname" required/>
                         </div>
 
                       </div>
@@ -58,7 +58,7 @@ const Contact = () => {
                       <div className="row50">
                         <div className="inputBox">
                           <span>E-mail</span>
-                          <input type="email" placeholder='JohnDoe@gmail.com' name="email"/>
+                          <input type="email" placeholder='JohnDoe@gmail.com' name="email" required/>
                         </div>
 
                         <div className="inputBox">
@@ -72,7 +72,7 @@ const Contact = () => {
                       <div className="row100">
                         <div className="inputBox">
                           <span>Message</span>
-                          <textarea placeholder='write a message here...' name="message"></textarea>
+                          <textarea placeholder='write a message here...' name="message" required></textarea>
                         </div>
 
                       </div>
