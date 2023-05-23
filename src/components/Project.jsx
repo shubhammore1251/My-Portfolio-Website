@@ -6,7 +6,7 @@ import { ProjectList } from '../data/ProjectList';
 const Project = () => {
     
     const handleClick = ()=>{
-        window.open("https://github.com/more1251?tab=repositories");
+        window.open("https://github.com/shubhammore1251?tab=repositories");
     }
 
     return (
@@ -48,7 +48,9 @@ const Project = () => {
                                             
                                     </div>
                                             
-                                    <a href={ele.demo_link} target="_blank" rel="noreferrer" className='d-flex button-33 flex-column'>Demo</a>
+                                    <a href={ele.demo_link} target="_blank" rel="noreferrer" className='button-33'>Demo</a>
+
+                                    <a href={ele.code_link} target="_blank" rel="noreferrer" className='ms-3 button-33'>Code</a>
                                 </div>
                                
                                         

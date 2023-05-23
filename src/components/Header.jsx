@@ -79,7 +79,7 @@ const Header = ({currTheme}) => {
                 </div>
 
                 <div className='circle-cmp'>
-                   <a href="https://github.com/more1251" target="_blank" rel="noreferrer"> 
+                   <a href="https://github.com/shubhammore1251" target="_blank" rel="noreferrer"> 
                     
                     {currTheme==='light'?
                     <img src="images/github.png" alt="github" />
@@ -91,7 +91,7 @@ const Header = ({currTheme}) => {
                 </div>
 
                 <div className='circle-cmp'>
-                 <a href="https://www.instagram.com/shubham_m_1251/" target="_blank" rel="noreferrer"> 
+                 <a href="https://www.instagram.com/the.shubham.more/" target="_blank" rel="noreferrer"> 
                    <img src="images/instagram.png" alt="instagram" />
                   </a>
                 </div>

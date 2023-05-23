@@ -1,7 +1,34 @@
 export const ProjectList = [
-
+   
   {
     id: 1,
+    name: "Sign Language Recognition Platform",
+    desc: "A sign language recognition project involved creating a custom dataset, preprocessing images, training a model, integrating with React.",
+    thumbnail: "images/projects/slr.png",
+    tech: [
+      {
+        id: "XId+f|'j!;",
+        img: "images/react-logo.png",
+      },
+      {
+        id: "/9Jp*Ogv2;",
+        img: "images/redux.png",
+      },
+      {
+        id: "'w2jAY,u9+",
+        img: "images/firebase.png",
+      },
+      {
+        id: "'w2Xui+u9",
+        img: "images/mediapipe.png",
+      },
+    ],
+    demo_link: "https://sign-language-ai.web.app/",
+    code_link: "https://github.com/shubhammore1251/Sign-Language-Recognition-Using-Mediapipe-and-React",
+  },
+
+  {
+    id: 2,
     name: "Take'A'Note",
     desc: "A Notes App where you can create,update,delete your notes and access anywhere and on any device.",
     thumbnail: "images/projects/takeanote.png",
@@ -24,12 +51,13 @@ export const ProjectList = [
       },
     ],
     demo_link: "https://takeanoteapp.web.app",
+    code_link: "https://github.com/shubhammore1251/Take-A-Note-App",
   },
   
   
   
   {
-    id: 2,
+    id: 3,
     name: "Krypto-Hub",
     desc: "A CryptoCurrency App where you can get all the  Crypto-Currency Information and News, Also you get detailed grapichal and numeric data to each coin and it is Mobile Responsive",
     thumbnail: "images/projects/kryptohub.png",
@@ -56,11 +84,12 @@ export const ProjectList = [
       }
     ],
     demo_link: "https://kryptohub.netlify.app",
+    code_link: "https://github.com/shubhammore1251/Krypto-Hub",
   },
   
 
   {
-    id: 3,
+    id: 4,
     name: "YouTube Clone",
     desc: "A Youtube Clone made using YouTube API. You see some of the Youtube features here.It is also Mobile Responsive",
     thumbnail: "images/projects/youtubeclone.png",
@@ -83,28 +112,6 @@ export const ProjectList = [
       },
     ],
     demo_link: "https://yt-cl-2022.web.app",
+    code_link: "https://github.com/shubhammore1251/YouTube-clone",
   },
-
-  {
-    id: 4,
-    name: "Ecommerce Site",
-    desc: "E-Mart a is E-commerce site.The Cart in this is  implemented using Redux and is Mobile Responsive",
-    thumbnail: "images/projects/emart.png",
-    tech: [
-      {
-        id: "XId+f|'j!;",
-        img: "images/react-logo.png",
-      },
-      {
-        id: "/9Jp*Ogv2;",
-        img: "images/redux.png",
-      },
-      {
-        id: "'w2jAY,u9+",
-        img: "images/bs.png",
-      },
-    ],
-    demo_link: "https://e-mart-react.web.app",
-  },
-
 ];

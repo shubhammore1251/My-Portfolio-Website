@@ -496,8 +496,10 @@ html::-webkit-scrollbar-track {
 }
 
 .right-block h3 {
-    margin: 3vh 10vw;
+    text-align: center;
+    width: 100%;
     font-size: 2rem;
+    margin-top: 1rem;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
     color: var(--black-color);
@@ -505,7 +507,7 @@ html::-webkit-scrollbar-track {
 
 .right-block p {
     font-size: 18px;
-    width: 35vw;
+    width: 550px;
     text-align: justify;
     font-weight: 600;
     color: var(--black-color);
@@ -1022,22 +1024,23 @@ html::-webkit-scrollbar-track {
     }
 
     .right-block {
-        margin-left: 6vw;
+        margin-left: 2rem;
         margin-top: -2vh;
-        width: 800px;
-        padding: 2px 0;
+        width: 600px;
+        padding: 20px 0;
     }
 
     .right-block h3 {
-        margin: 3vh 20vw;
+        text-align: center;
         font-size: 1.5rem;
+        width: 40%;
         font-weight: bold;
         font-family: 'Josefin Sans', sans-serif;
     }
 
     .right-block p {
         font-size: 16px;
-        width: 80vw;
+        width: 250px;
         text-align: justify;
         font-weight: 600;
     }
@@ -1056,7 +1059,6 @@ html::-webkit-scrollbar-track {
         width: 80px;
         height: 35px;
         font-size: 15px;
-        margin-bottom: 3vh;
     }
 
     .see-more {
